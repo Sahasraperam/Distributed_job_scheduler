@@ -1,0 +1,121 @@
+<svg viewBox="0 0 1680 1120" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1680" height="1120" fill="#FAFAF9"/>
+<defs>
+  <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+  </marker>
+  <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1D4ED8"/>
+  </marker>
+  <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#B91C1C"/>
+  </marker>
+  <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#047857"/>
+  </marker>
+  <marker id="arrowViolet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#6D28D9"/>
+  </marker>
+</defs>
+<text x="840.0" y="42" text-anchor="middle" font-size="28" font-weight="700" fill="#111827">codity Job Scheduler &#8212; System Architecture</text>
+<text x="840.0" y="66" text-anchor="middle" font-size="14" fill="#6B7280">npm-workspaces monorepo &#183; 3 deployables + 2 shared packages &#183; PostgreSQL as the sole coordination layer</text>
+<rect x="670.0" y="96" width="340" height="66" rx="14" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1.6"/>
+<text x="840.0" y="124" text-anchor="middle" font-size="15.5" font-weight="700" fill="#111827">Browser Client</text>
+<text x="840.0" y="144" text-anchor="middle" font-size="11.5" fill="#6B7280">Queue health &#183; job explorer &#183; worker status &#183; live metrics</text>
+<rect x="690.0" y="200" width="300" height="74" rx="14" fill="white" stroke="#A7F3D0" stroke-width="1.6"/>
+<path d="M 690.0 230 L 690.0 214 Q 690.0 200 704.0 200 L 976.0 200 Q 990.0 200 990.0 214 L 990.0 230 Z" fill="#047857"/><text x="706.0" y="221" font-size="15.5" font-weight="700" fill="white">apps/dashboard</text><text x="976.0" y="221" font-size="10.5" fill="white" fill-opacity="0.85" text-anchor="end">Next.js 15</text>
+<text x="840.0" y="250" text-anchor="middle" font-size="11.5" fill="#374151">React Query polling + Socket.IO client</text>
+<text x="840.0" y="266" text-anchor="middle" font-size="10.5" fill="#6B7280">login &#183; dashboard &#183; queues &#183; jobs &#183; workers</text>
+<line x1="840.0" y1="162" x2="840.0" y2="200" stroke="#6B7280" stroke-width="1.8" marker-end="url(#arrowGray)"/>
+<rect x="410.0" y="330" width="860" height="330" rx="14" fill="white" stroke="#C7D2FE" stroke-width="1.6"/>
+<path d="M 410.0 360 L 410.0 344 Q 410.0 330 424.0 330 L 1256.0 330 Q 1270.0 330 1270.0 344 L 1270.0 360 Z" fill="#4338CA"/><text x="426.0" y="351" font-size="15.5" font-weight="700" fill="white">apps/api</text><text x="1256.0" y="351" font-size="10.5" fill="white" fill-opacity="0.85" text-anchor="end">NestJS Service</text>
+<text x="426.0" y="380" font-size="11.5" fill="#374151">REST endpoints &#183; JWT auth &#183; RBAC guards &#183; Socket.IO gateway &#183; embedded scheduler engine</text>
+<rect x="426.0" y="396" width="195.0" height="54" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.6"/>
+<text x="523.5" y="418" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730A3" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">auth</text>
+<text x="523.5" y="436" text-anchor="middle" font-size="10" fill="#4B5563">JWT + RBAC guards</text>
+<rect x="637.0" y="396" width="195.0" height="54" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.6"/>
+<text x="734.5" y="418" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730A3" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">jobs</text>
+<text x="734.5" y="436" text-anchor="middle" font-size="10" fill="#4B5563">create / list / retry</text>
+<rect x="848.0" y="396" width="195.0" height="54" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.6"/>
+<text x="945.5" y="418" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730A3" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">queues</text>
+<text x="945.5" y="436" text-anchor="middle" font-size="10" fill="#4B5563">config, pause/resume</text>
+<rect x="1059.0" y="396" width="195.0" height="54" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.6"/>
+<text x="1156.5" y="418" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730A3" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">metrics</text>
+<text x="1156.5" y="436" text-anchor="middle" font-size="10" fill="#4B5563">REST + Socket.IO gateway</text>
+<rect x="426.0" y="470" width="828" height="118" rx="12" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.6"/>
+<text x="442.0" y="494" font-size="13" font-weight="700" fill="#B91C1C">scheduler engine  <tspan font-weight="400" fill="#7F1D1D" font-size="10.5">(src/scheduler &#8212; 3 in-process setInterval loops, no 4th service)</tspan></text>
+<rect x="442.0" y="508" width="254.66666666666666" height="68" rx="8" fill="white" stroke="#FCA5A5" stroke-width="1.6"/>
+<text x="569.3333333333334" y="526" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">promoteDelayedJobs()</text>
+<text x="569.3333333333334" y="542" text-anchor="middle" font-size="10" font-weight="700" fill="#B91C1C">every 2s</text>
+<text x="569.3333333333334" y="560" text-anchor="middle" font-size="9" fill="#4B5563">SCHEDULED &#8594; QUEUED when</text>
+<text x="569.3333333333334" y="572" text-anchor="middle" font-size="9" fill="#4B5563">nextRunAt &#8804; now; resolves cron/batch spawns</text>
+<rect x="712.6666666666666" y="508" width="254.66666666666666" height="68" rx="8" fill="white" stroke="#FCA5A5" stroke-width="1.6"/>
+<text x="840.0" y="526" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">processCronTriggers()</text>
+<text x="840.0" y="542" text-anchor="middle" font-size="10" font-weight="700" fill="#B91C1C">every 5s</text>
+<text x="840.0" y="560" text-anchor="middle" font-size="9" fill="#4B5563">evaluates</text>
+<text x="840.0" y="572" text-anchor="middle" font-size="9" fill="#4B5563">ScheduledJob.cronExpression, enqueues due recurring jobs</text>
+<rect x="983.3333333333333" y="508" width="254.66666666666666" height="68" rx="8" fill="white" stroke="#FCA5A5" stroke-width="1.6"/>
+<text x="1110.6666666666665" y="526" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">recoverAbandonedJobs()</text>
+<text x="1110.6666666666665" y="542" text-anchor="middle" font-size="10" font-weight="700" fill="#B91C1C">every 10s</text>
+<text x="1110.6666666666665" y="560" text-anchor="middle" font-size="9" fill="#4B5563">workers silent &gt;30s</text>
+<text x="1110.6666666666665" y="572" text-anchor="middle" font-size="9" fill="#4B5563">&#8594; OFFLINE; in-flight jobs requeued or sent to DLQ</text>
+<line x1="800.0" y1="274" x2="800.0" y2="330" stroke="#1D4ED8" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+<text x="790.0" y="302.0" text-anchor="end" font-size="10.5" fill="#1D4ED8">REST (HTTPS)</text>
+<line x1="880.0" y1="330" x2="880.0" y2="274" stroke="#6D28D9" stroke-width="1.8" stroke-dasharray="5 3" marker-end="url(#arrowViolet)"/>
+<text x="890.0" y="302.0" text-anchor="start" font-size="10.5" fill="#6D28D9">WebSocket (live metrics)</text>
+<rect x="410.0" y="750" width="420" height="190" rx="14" fill="white" stroke="#FED7AA" stroke-width="1.6"/>
+<path d="M 410.0 780 L 410.0 764 Q 410.0 750 424.0 750 L 816.0 750 Q 830.0 750 830.0 764 L 830.0 780 Z" fill="#C2410C"/><text x="426.0" y="771" font-size="15.5" font-weight="700" fill="white">apps/worker</text><text x="816.0" y="771" font-size="10.5" fill="white" fill-opacity="0.85" text-anchor="end">Node.js pool</text>
+<text x="426.0" y="800" font-size="11" fill="#374151">worker.service.ts &#183; replicas scale independently of API</text>
+<rect x="426.0" y="814" width="85.0" height="100" rx="9" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.6"/>
+<text x="468.5" y="836" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">poll</text>
+<text x="468.5" y="850" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">queues</text>
+<text x="468.5" y="872" text-anchor="middle" font-size="9" fill="#6B7280">setTimeout, </text>
+<text x="468.5" y="885" text-anchor="middle" font-size="9" fill="#6B7280">1000ms </text>
+<rect x="527.0" y="814" width="85.0" height="100" rx="9" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.6"/>
+<text x="569.5" y="836" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">claim</text>
+<text x="569.5" y="850" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">atomically</text>
+<text x="569.5" y="872" text-anchor="middle" font-size="9" fill="#6B7280">SKIP LOCKED </text>
+<text x="569.5" y="885" text-anchor="middle" font-size="9" fill="#6B7280">tx </text>
+<rect x="628.0" y="814" width="85.0" height="100" rx="9" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.6"/>
+<text x="670.5" y="836" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">execute</text>
+<text x="670.5" y="850" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">concurrently</text>
+<text x="670.5" y="872" text-anchor="middle" font-size="9" fill="#6B7280">per-worker + </text>
+<text x="670.5" y="885" text-anchor="middle" font-size="9" fill="#6B7280">per-queue </text>
+<text x="670.5" y="898" text-anchor="middle" font-size="9" fill="#6B7280">limits </text>
+<rect x="729.0" y="814" width="85.0" height="100" rx="9" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.6"/>
+<text x="771.5" y="836" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9A3412">heartbeat</text>
+<text x="771.5" y="872" text-anchor="middle" font-size="9" fill="#6B7280">every 5000ms </text>
+<text x="426.0" y="926" font-size="9.5" fill="#9A3412">graceful shutdown: SIGTERM/SIGINT drains in-flight jobs before exit</text>
+<rect x="890.0" y="750" width="380" height="190" rx="14" fill="white" stroke="#DDD6FE" stroke-width="1.6"/>
+<path d="M 890.0 780 L 890.0 764 Q 890.0 750 904.0 750 L 1256.0 750 Q 1270.0 750 1270.0 764 L 1270.0 780 Z" fill="#6D28D9"/><text x="906.0" y="771" font-size="15.5" font-weight="700" fill="white">packages/*</text><text x="1256.0" y="771" font-size="10.5" fill="white" fill-opacity="0.85" text-anchor="end">shared workspaces</text>
+<rect x="906.0" y="800" width="348" height="58" rx="9" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1.6"/>
+<text x="920.0" y="822" font-size="12" font-weight="700" fill="#5B21B6" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">database</text>
+<text x="920.0" y="840" font-size="10" fill="#4B5563">Prisma schema, migrations &amp; generated client &#8212;</text>
+<text x="920.0" y="853" font-size="10" fill="#4B5563">single source of truth imported by api &amp; worker</text>
+<rect x="906.0" y="870" width="348" height="56" rx="9" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1.6"/>
+<text x="920.0" y="892" font-size="12" font-weight="700" fill="#5B21B6" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace">shared</text>
+<text x="920.0" y="910" font-size="10" fill="#4B5563">DTOs &amp; types shared across api / worker /</text>
+<text x="920.0" y="923" font-size="10" fill="#4B5563">dashboard</text>
+<path d="M 890.0 845.0 C 1230.0 845.0, 1230.0 660, 1230.0 660" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrowViolet)"/>
+<text x="884.0" y="839.0" text-anchor="end" font-size="9.5" fill="#7C3AED">generated client</text>
+<path d="M 890.0 861.0 C 870.0 861.0, 870.0 845.0, 830.0 845.0" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrowViolet)"/>
+<path d="M 460.0 1046 Q 460.0 1030 840.0 1030 Q 1220.0 1030 1220.0 1046 L 1220.0 1104 Q 1220.0 1120 840.0 1120 Q 460.0 1120 460.0 1104 Z" fill="#0F172A"/>
+<ellipse cx="840.0" cy="1046" rx="380.0" ry="14" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+<text x="840.0" y="1072" text-anchor="middle" font-size="16" font-weight="700" fill="white">PostgreSQL</text>
+<text x="840.0" y="1092" text-anchor="middle" font-size="11" fill="#CBD5E1">sole coordination layer &#8212; no Redis / RabbitMQ / Kafka</text>
+<text x="840.0" y="1108" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', 'SF Mono', Consolas, monospace" fill="#94A3B8">UPDATE ... WHERE id = (SELECT ... FOR UPDATE SKIP LOCKED)</text>
+<line x1="530.0" y1="660" x2="600.0" y2="1030" stroke="#4338CA" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+<text x="500.0" y="839.0" font-size="10.5" fill="#4338CA">read / write (Prisma)</text>
+<line x1="620.0" y1="940" x2="740.0" y2="1030" stroke="#C2410C" stroke-width="2" marker-end="url(#arrowRed)"/>
+<text x="630.0" y="989.0" font-size="10.5" font-weight="700" fill="#C2410C">atomic claim (FOR UPDATE SKIP LOCKED)</text>
+<text x="630.0" y="1003.0" font-size="9.5" fill="#9A3412">+ heartbeats &amp; JobLog / JobExecution writes</text>
+<text x="40" y="1094" font-size="11" fill="#6B7280">Legend:</text>
+<line x1="102" y1="1090" x2="128" y2="1090" stroke="#1D4ED8" stroke-width="2.4"/>
+<text x="134" y="1094" font-size="10.5" fill="#374151">REST</text>
+<line x1="185.6" y1="1090" x2="211.6" y2="1090" stroke="#6D28D9" stroke-width="2.4"/>
+<text x="217.6" y="1094" font-size="10.5" fill="#374151">WebSocket (live)</text>
+<line x1="346.0" y1="1090" x2="372.0" y2="1090" stroke="#C2410C" stroke-width="2.4"/>
+<text x="378.0" y="1094" font-size="10.5" fill="#374151">atomic DB claim</text>
+<line x1="500.0" y1="1090" x2="526.0" y2="1090" stroke="#4338CA" stroke-width="2.4"/>
+<text x="532.0" y="1094" font-size="10.5" fill="#374151">ORM read/write</text>
+</svg>

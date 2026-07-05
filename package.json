@@ -1,0 +1,27 @@
+{
+  "name": "codity-job-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "db:generate": "npm run prisma:generate --workspace=packages/database",
+    "db:migrate": "npm run prisma:migrate --workspace=packages/database",
+    "db:seed": "npm run prisma:seed --workspace=packages/database",
+    "dev:api": "npm run start:dev --workspace=apps/api",
+    "dev:worker": "npm run start:dev --workspace=apps/worker",
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard",
+    "dev": "concurrently -n \"api,worker,dashboard\" -c \"blue,green,magenta\" \"npm run dev:api\" \"npm run dev:worker\" \"npm run dev:dashboard\"",
+    "build:all": "npm run build --workspaces",
+    "test:all": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "concurrently": "^8.2.2"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} packages/database/prisma/seed.ts"
+  }
+}
